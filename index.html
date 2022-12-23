@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Notas</title>
+  <link href="bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />  
+</head>
+
+<body onload="mostrar_notas()">
+  <div id="container">
+    <div>
+      <form id="entrada_dados">
+        <h1 class="text-center mt-2">Notas</h1>
+        <div class="form-row">
+          <div class="col-md-12">
+            <label for="title">Título da Nota</label>
+            <input id="title" name="title" class="form-control" type="text" placeholder="Insira aqui" required></input>
+          </div>
+          <div class="col-md-6 mt-3">
+            <label for="texto">Conteúdo da Nota</label>
+            <textarea id="texto" name="texto" class="form-control" type="text" placeholder="Escreva Aqui" required></textarea>
+          </div>
+        </div>
+        <div class="form-row mt-2 mb-4">
+          <div class="col-md-12">
+            <button class="btn btn-info" onclick="salvar_nota()" type="button">Salvar Nota</button>
+          </div>
+        </div>     
+      </form>
+    </div>
+    <div id="baixo" class="mt-4">
+      <ul id="lista_notas" class="mt-2">
+        
+      </ul>
+    </div>
+  </div>
+  <script src="js/jquery/jquery.js"></script>
+  <script src="js/jquery/jquery.validate.js"></script>
+  <script src="js/jquery/jquery.mask.js"></script>
+  <script src="script.js"></script> 
+</body>
+
+</html>
