@@ -5,13 +5,12 @@ body{
   padding: 2%;
   font-family: Poppins, sans-serif;
 }
-#container div{
-  background-color: #b9bdc4;
-}
 #entrada_dados{
   border: 1px solid black;
+  border-radius: 5px;
   display: grid;
   justify-content: center;
+  background-color: #b9bdc4;
 }
 #title{
   border: 1px solid black;
@@ -21,9 +20,18 @@ body{
   width: 40vw;
   height: 10vh;
 }
-#baixo{
+ul{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.notas{
+  background-color: #b9bdc4;
   border: 1px solid black;
+  padding: 3%;
+  border-radius: 12px;
 }
 .msg{
   font-size: 20px;
 }
+

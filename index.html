@@ -3,15 +3,16 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Notas</title>
+  <script src="js/jquery/jquery_teste.js"></script>
   <link href="bootstrap.css" rel="stylesheet" type="text/css" />
   <link href="style.css" rel="stylesheet" type="text/css" />  
 </head>
 
 <body onload="mostrar_notas()">
   <div id="container">
-    <div>
+    <div id="cima">
       <form id="entrada_dados">
         <h1 class="text-center mt-2">Notas</h1>
         <div class="form-row">
@@ -25,8 +26,9 @@
           </div>
         </div>
         <div class="form-row mt-2 mb-4">
-          <div class="col-md-12">
-            <button class="btn btn-info" onclick="salvar_nota()" type="button">Salvar Nota</button>
+          <div id="area_botoes" class="col-md-12">
+            <button id="salvar_nota" class="btn btn-info shadow-lg rounded" onclick="salvar_nota()" type="button">Salvar Nota</button>
+            <button id="apagar_todas" class="btn btn-info shadow-lg rounded" onclick="apagar_notas()" type="button">Apagar todas as notas</button>
           </div>
         </div>     
       </form>
@@ -42,5 +44,5 @@
   <script src="js/jquery/jquery.mask.js"></script>
   <script src="script.js"></script> 
 </body>
-
+  
 </html>
